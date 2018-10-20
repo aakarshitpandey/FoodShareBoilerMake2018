@@ -45,6 +45,8 @@ public class mainPage extends AppCompatActivity {
                 finish();
                 startActivity(new Intent(this, LoginActivity.class));
                 break;
+            case R.id.item2:
+
         }
 
         return true;

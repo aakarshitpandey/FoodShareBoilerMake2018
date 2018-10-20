@@ -7,5 +7,11 @@
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/item2"
+        android:title="@string/viewProfile"
+        app:showAsAction="never"
+        />
+
 
 </menu>

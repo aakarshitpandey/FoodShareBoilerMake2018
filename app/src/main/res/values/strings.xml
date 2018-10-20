@@ -18,4 +18,5 @@
     <string name="displayLogo">displayLogo</string>
     <string name="createAccount">create account</string>
     <string name="menuLogout">log out</string>
+    <string name="viewProfile">Profile</string>
 </resources>
