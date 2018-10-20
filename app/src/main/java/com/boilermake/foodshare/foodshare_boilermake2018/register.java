@@ -10,6 +10,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class register extends AppCompatActivity {
+    private TextView register;
+    private EditText email;
+    private EditText password;
+    private EditText name;
+    private EditText city;
+    private Button signUp;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef;
@@ -20,13 +26,13 @@ public class register extends AppCompatActivity {
 
         setContentView(R.layout.activity_register);
 
-        final TextView register = findViewById(R.id.Intro);
-        final EditText email = findViewById(R.id.Email);
-        final EditText password = findViewById(R.id.Password);
-        final EditText name = findViewById(R.id.NameEditText);
-        final EditText city = findViewById(R.id.City);
+        register = findViewById(R.id.Intro);
+        email = findViewById(R.id.Email);
+        password = findViewById(R.id.Password);
+        name = findViewById(R.id.NameEditText);
+        city = findViewById(R.id.City);
+        signUp = findViewById(R.id.signUpBttn);
 
-        Button signUp = (Button) findViewById(R.id.signUpBttn);
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
