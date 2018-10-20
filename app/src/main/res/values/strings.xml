@@ -27,6 +27,8 @@
     <string name="signUp">SIGN UP</string>
     <string name="restaurant">RESTAURANT</string>
     <string name="customer">CUSTOMER</string>
+    <string name="address">Address</string>
+    <string name="nameRestaurant">Name of Restaurant</string>
 
 
 </resources>

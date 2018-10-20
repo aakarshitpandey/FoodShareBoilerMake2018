@@ -27,6 +27,13 @@ public class clientType extends AppCompatActivity {
         restaurant = findViewById(R.id.restaurantButton);
         customer = findViewById(R.id.customerButton);
 
+        restaurant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRegisterRestaurantActivity();
+            }
+        });
+
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +44,12 @@ public class clientType extends AppCompatActivity {
 
     public void openCreateAccountActivity() {
         Intent intent = new Intent(this, register.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void openRegisterRestaurantActivity() {
+        Intent intent = new Intent(this, registerRestaurant.class);
         startActivity(intent);
         finish();
     }
