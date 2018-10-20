@@ -59,9 +59,11 @@ public class register extends AppCompatActivity {
 
                 try {
                     if (inputEmail.length() > 0 && inputPassword.length() > 0 && inputName.length() > 0 && inputCity.length() > 0) {
+
                         auth.createUserWithEmailAndPassword(inputEmail, inputPassword).addOnCompleteListener(register.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+
                                 if (!task.isSuccessful()) {
                                     Toast.makeText(register.this, "Authentication Failed", Toast.LENGTH_LONG).show();
                                 } else {
