@@ -63,11 +63,13 @@ public class LoginActivity extends AppCompatActivity {
     public void openCreateAccountActivity() {
         Intent intent = new Intent(this, register.class);
         startActivity(intent);
+        finish();
     }
 
     public void openLoginSuccessful() {
         Intent intent = new Intent(this, mainPage.class);
         startActivity(intent);
+        finish();
     }
 
     private void startSignIn() {
