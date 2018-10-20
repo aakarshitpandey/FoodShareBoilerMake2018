@@ -19,4 +19,12 @@
     <string name="createAccount">create account</string>
     <string name="menuLogout">log out</string>
     <string name="viewProfile">Profile</string>
+    <string name="registrationIntro">REGISTRATION</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="password1">Password</string>
+    <string name="city">City</string>
+    <string name="name">Name</string>
+    <string name="signUp">SIGN UP</string>
+
+
 </resources>
