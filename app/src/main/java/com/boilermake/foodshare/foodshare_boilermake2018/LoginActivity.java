@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText mPassword;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private TextView createAccount;
+    private Button createAccount;
     private Button login;
     private final String invalidUserInfo = "Invalid username or password";
 
