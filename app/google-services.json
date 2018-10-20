@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "196500040173",
+    "firebase_url": "https://foodshare-c19b8.firebaseio.com",
+    "project_id": "foodshare-c19b8",
+    "storage_bucket": "foodshare-c19b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196500040173:android:dc3ddff450348969",
+        "android_client_info": {
+          "package_name": "com.boilermake.foodshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196500040173-fn2l9s7kosnnvag7aajmspsltteskmdj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boilermake.foodshare",
+            "certificate_hash": "48aa2b92bcfdd85b30ed446f14ee4817cdb5284a"
+          }
+        },
+        {
+          "client_id": "196500040173-ovj9cnlv3kq4t9s8juqjbckht5aaiihm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfgYOHGSkJ22NpgYIpgdnInU6Ga8bqpDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196500040173-ovj9cnlv3kq4t9s8juqjbckht5aaiihm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196500040173:android:307c5c55998f6086",
+        "android_client_info": {
+          "package_name": "com.boilermake.foodshare.foodshare_boilermake2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196500040173-6ufm3hld2httka90ip6s2tj8rnjc3nl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boilermake.foodshare.foodshare_boilermake2018",
+            "certificate_hash": "48aa2b92bcfdd85b30ed446f14ee4817cdb5284a"
+          }
+        },
+        {
+          "client_id": "196500040173-ovj9cnlv3kq4t9s8juqjbckht5aaiihm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfgYOHGSkJ22NpgYIpgdnInU6Ga8bqpDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196500040173-ovj9cnlv3kq4t9s8juqjbckht5aaiihm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
