@@ -25,6 +25,8 @@
     <string name="city">City</string>
     <string name="name">Name</string>
     <string name="signUp">SIGN UP</string>
+    <string name="restaurant">RESTAURANT</string>
+    <string name="customer">CUSTOMER</string>
 
 
 </resources>
