@@ -36,8 +36,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event2"
@@ -45,8 +45,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event3"
@@ -54,8 +54,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event4"
@@ -63,8 +63,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event5"
@@ -72,8 +72,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event6"
@@ -81,17 +81,17 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event7"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event8"
@@ -99,8 +99,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event9"
@@ -108,8 +108,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/event10"
@@ -117,8 +117,8 @@
             android:focusable="true"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/event"
-            android:textSize="45sp" />
+            android:background="@drawable/back"
+            android:textSize="25sp" />
 
     </LinearLayout>
 
