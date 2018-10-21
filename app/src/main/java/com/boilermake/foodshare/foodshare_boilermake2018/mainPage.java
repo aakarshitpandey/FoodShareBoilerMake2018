@@ -33,7 +33,7 @@ public class mainPage extends AppCompatActivity {
     private String profileName;
     private String profileCity;
     private DataSnapshot dataSnapshot;
-
+    private DatabaseReference mDatabaseRestaurant;
 
     /**
      * event list
@@ -49,6 +49,11 @@ public class mainPage extends AppCompatActivity {
     private TextView event9;
     private TextView event10;
 
+    private String eventStr;
+    private String eventStrLoc;
+    private String eventStrMenu;
+    private String eventStrName;
+    private String eventStrNum;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,9 +63,60 @@ public class mainPage extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar); //log out tool bar sync
         setSupportActionBar(toolbar);
 
+        event1 = findViewById(R.id.event1);
+        event2 = findViewById(R.id.event2);
+        event3 = findViewById(R.id.event3);
+        event4 = findViewById(R.id.event4);
+        event5 = findViewById(R.id.event5);
+        event6 = findViewById(R.id.event6);
+        event7 = findViewById(R.id.event7);
+        event8 = findViewById(R.id.event8);
+        event9 = findViewById(R.id.event9);
+        event10 = findViewById(R.id.event10);
+
+
+
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
         userId = currentUser.getUid();
         mDatabase = FirebaseDatabase.getInstance().getReference().child(userId); //access current user's database
+
+        mDatabaseRestaurant = FirebaseDatabase.getInstance().getReference().child("Event");
+
+        mDatabaseRestaurant.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                eventStrLoc = dataSnapshot.child("Event1").child("loc").getValue().toString();
+                eventStrMenu = dataSnapshot.child("Event1").child("menu").getValue().toString();
+                eventStrName = dataSnapshot.child("Event1").child("name").getValue().toString();
+                eventStrNum = dataSnapshot.child("Event1").child("num").getValue().toString();
+
+                eventStr = eventStrLoc + " " + eventStrMenu + " " + eventStrName + " " + eventStrNum;
+                event1.setText(eventStr);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(mainPage.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mDatabaseRestaurant.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                eventStrLoc = dataSnapshot.child("Event2").child("loc").getValue().toString();
+                eventStrMenu = dataSnapshot.child("Event2").child("menu").getValue().toString();
+                eventStrName = dataSnapshot.child("Event2").child("name").getValue().toString();
+                eventStrNum = dataSnapshot.child("Event2").child("num").getValue().toString();
+
+                eventStr = eventStrLoc + " " + eventStrMenu + " " + eventStrName + " " + eventStrNum;
+                event2.setText(eventStr);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(mainPage.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
@@ -86,7 +142,6 @@ public class mainPage extends AppCompatActivity {
             }
         });
 
-
     }
 
 
@@ -98,6 +153,7 @@ public class mainPage extends AppCompatActivity {
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -107,6 +163,7 @@ public class mainPage extends AppCompatActivity {
                 finish();
                 startActivity(new Intent(this, LoginActivity.class));
                 break;
+
             case R.id.item2:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Profile Information");
