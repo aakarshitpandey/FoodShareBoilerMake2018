@@ -65,7 +65,7 @@ public class register extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(register.this, "Authentication Failed", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(register.this, "User already exists", Toast.LENGTH_LONG).show();
                                 } else {
                                     String userID = auth.getCurrentUser().getUid();
                                     DatabaseReference currentUserDB = FirebaseDatabase.getInstance().getReference().child("Users").child(userID);
@@ -76,7 +76,7 @@ public class register extends AppCompatActivity {
 
                                     currentUserDB.setValue(newPost);
 
-                                    Intent intent = new Intent(register.this, mainPage.class);
+                                    Intent intent = new Intent(register.this, welcomeRestaurant.class);
                                     startActivity(intent);
                                     finish();
                                 }

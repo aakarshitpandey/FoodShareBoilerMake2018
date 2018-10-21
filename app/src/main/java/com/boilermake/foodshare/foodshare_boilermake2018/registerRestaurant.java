@@ -78,7 +78,7 @@ public class registerRestaurant extends AppCompatActivity {
 
                                     currentUserDB.setValue(newPost);
 
-                                    Intent intent = new Intent(registerRestaurant.this, mainPage.class);
+                                    Intent intent = new Intent(registerRestaurant.this, welcomeRestaurant.class);
                                     startActivity(intent);
                                     finish();
                                 }

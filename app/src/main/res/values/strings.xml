@@ -23,12 +23,18 @@
     <string name="emailAddress">Email Address</string>
     <string name="password1">Password</string>
     <string name="city">City</string>
+    <string name="addevent">Add Event</string>
+    <string name="welcome">Welcome</string>
     <string name="name">Name</string>
     <string name="signUp">SIGN UP</string>
     <string name="restaurant">RESTAURANT</string>
     <string name="customer">CUSTOMER</string>
     <string name="address">Address</string>
     <string name="nameRestaurant">Name of Restaurant</string>
-
+    <string name="seatingCapacity">Seating Capacity</string>
+    <string name="dishName">Name of the Dish</string>
+    <string name="dishPrice">Price of the Dish</string>
+    <string name="addMore">ADD MORE</string>
+    <string name="done">DONE</string>
 
 </resources>

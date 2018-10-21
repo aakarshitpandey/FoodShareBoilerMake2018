@@ -59,6 +59,33 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".addEvent"
+            android:label="FoodShare-BoilerMake2018">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />"
+                <category android:name="android.intent.category.LAUNCHER" />"
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".welcomeRestaurant"
+            android:label="FoodShare-BoilerMake2018">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />"
+                <category android:name="android.intent.category.LAUNCHER" />"
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".addMenu"
+            android:label="FoodShare-BoilerMake2018">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />"
+                <category android:name="android.intent.category.LAUNCHER" />"
+            </intent-filter>
+        </activity>
+
     </application>
 
 
